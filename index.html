@@ -4,31 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Franklin</title>
-    <style>
-        header{
-            background-color:#20065b;
-            color: #FFFFFF;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;  
-            padding: 18px;
-            border: 3px solid #0e5b9e;
-        }
-        main{
-          background-color:#FFFFFF;
-            color: #20065b;  
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;  
-        }
-        img{
-            display: block;      
-            margin: 0 auto;    
-            width: 60%;        
-            height: auto;    
-           }
-        
-    </style>
+   <link rel = "stylesheet" href = "./style.css">
 </head>
 <body>
     <header>
@@ -47,21 +23,7 @@
         <button>❤<span>0</span></button>
         <button>👍<span>0</span></button>
     </main>
+    <script src = "./script.js"></script>
 </body>
-<script>
-    const botoes = document.querySelectorAll("button");
-    
-    botoes.forEach(function(botao){
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado(){
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            texto.textContent++;
-        } 
-
-    })
-
-
-
-</script>
+ 
 </html>
